@@ -1,0 +1,57 @@
+
+
+.container {
+    border: 3px solid #f1f1f1;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 93px 564px 115px 137px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form {
+    max-width: 50px;
+    border-top: 5px solid;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 1rem;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.member-btn {
+    margin-top: 3rem;
+    background-color: #04AA6D;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
