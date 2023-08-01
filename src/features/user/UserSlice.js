@@ -25,7 +25,18 @@ export const registerUser = createAsyncThunk(
     }
   )
  
-
+ 
+  export const addEmployee = createAsyncThunk(
+    'user/addEmployee',
+    async (user, thunkAPI) => {
+      try {
+        const resp = await customFetch.post('/auth/addEmployee', user);
+        return resp.data;
+      } catch (error) {
+        return thunkAPI.rejectWithValue(error.response.data.msg);
+      }
+    }
+  )
   
   const initialState = {
     isLoading: false,

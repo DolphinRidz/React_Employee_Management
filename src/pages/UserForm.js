@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import FormRow from '../components/FormRow';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser, registerUser } from '../features/user/UserSlice';
+import { addEmployee, registerUser } from '../features/user/UserSlice';
 import { useNavigate } from 'react-router-dom';
 import '../Assets/css/Register.css';
 const initialState = {
@@ -39,7 +39,7 @@ function UserForm() {
         //     dispatch(loginUser({ email: email, password: password }));
         //     return;
         //   }
-          dispatch(registerUser({ name, email, password }));
+          dispatch(addEmployee({ name, email, password }));
     };
 
     const toggleMember = () => {
