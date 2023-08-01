@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginUser, registerUser } from '../features/user/UserSlice';
 import { useNavigate } from 'react-router-dom';
 import '../Assets/css/Register.css';
+import './userform/userform.css';
+
 const initialState = {
     name: '',
     email: '',
@@ -105,16 +107,12 @@ function UserForm() {
                 value={values.about}
                 handleChange={handleChange}
             />
-            <button type='submit' className="member-btn">
+
+            <button type='submit' className="btn btn-primary btn-block"> 
                  {isLoading ? 'loading...' : 'submit'}
             </button>
 
-            <p>
-                {/* {values.isMember ? 'Not a member yet?' : 'Already a member?'} */}
-                <button type='button' onClick={toggleMember} className="member-btn">
-                    {values.isMember ? 'Register' : 'Login'}
-                </button>
-            </p>
+           
         </form>
         </div>
 

@@ -58,7 +58,7 @@ body{
     border-radius: 3px;
 }
 
-.btn-custom {
+/* .btn-custom {
     background: blueviolet;
     color: white;
     border: none;
@@ -71,9 +71,10 @@ body{
 
 .btn-custom:hover {
     background: palevioletred;
-}
+} */
 .flexArea{
     display: flex;
     display: inline-block;
     flex-direction: column;
 }
+

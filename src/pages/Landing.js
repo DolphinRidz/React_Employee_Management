@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import main from '../Assets/images/main.svg'
 import '../Assets/css/Landing.css'
 const Landing = () => {
-  toast.success('Welcome Again', {
-    position: toast.POSITION.TOP_CENTER
-});
+//   toast.success('Welcome Again', {
+//     position: toast.POSITION.TOP_CENTER
+// });
   return (
     <div className="container">
         <h1 > User <span>Portal</span> app</h1>
@@ -17,8 +17,9 @@ const Landing = () => {
            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         
-        
-         <button><Link to='/register'>Login/Register</Link></button>
+
+        <a href="/register" class="btn btn-primary">Login / Register</a>
+
         
       </div>
 
