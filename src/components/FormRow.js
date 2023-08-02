@@ -2,7 +2,6 @@ import '../Assets/css/FormRow.css';
 
 const FormRow = ({ type, name, value, handleChange, labelText }) => {
     return (
-      // <div className="form-group">
       <div className='rowContainer'>
         <label htmlFor={name}>
           {labelText || name}
